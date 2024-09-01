@@ -6,9 +6,14 @@ import { PrismaService } from 'src/contexts/shared/infrastructure/repositories/p
 import { SpaceshipRepository } from '../domain/spaceship.repository';
 import { RepairBayController } from './http-api/v1/repair-bay/repair-bay.controller';
 import { RepairBayUseCase } from '../application/repair-bay-use-case/repair-bay-use-case';
+import { TeapotController } from './http-api/v1/teapot/teapot.controller';
 
 @Module({
-  controllers: [GetSystemStatusController, RepairBayController],
+  controllers: [
+    GetSystemStatusController,
+    RepairBayController,
+    TeapotController,
+  ],
   providers: [
     GetSystemStatusUseCase,
     RepairBayUseCase,
