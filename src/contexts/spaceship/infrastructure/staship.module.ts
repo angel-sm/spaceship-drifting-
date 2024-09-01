@@ -7,12 +7,14 @@ import { SpaceshipRepository } from '../domain/spaceship.repository';
 import { RepairBayController } from './http-api/v1/repair-bay/repair-bay.controller';
 import { RepairBayUseCase } from '../application/repair-bay-use-case/repair-bay-use-case';
 import { TeapotController } from './http-api/v1/teapot/teapot.controller';
+import { PhaseChangeDiagram } from './http-api/v1/phase-change-diagram/phase-change-diagram';
 
 @Module({
   controllers: [
     GetSystemStatusController,
     RepairBayController,
     TeapotController,
+    PhaseChangeDiagram,
   ],
   providers: [
     GetSystemStatusUseCase,
